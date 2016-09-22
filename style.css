@@ -1,0 +1,171 @@
+html {
+  background-image: url(assets/background.jpg);
+  background-position: center bottom;
+  background-attachment: fixed;
+  background-size: cover;
+  height: 100%;
+  font-size: 100%;
+}
+
+body {
+    color: #fff;
+    font-family: "herolite", sans-serif;
+    font-size: 1.3em;
+    margin: 0;
+}
+
+/*--typography stuff--*/
+
+@font-face {
+    font-family: "herolite";
+    src: url("assets/herolite.otf")
+    format('opentype');
+}
+
+nav {
+    letter-spacing: .5em;
+    text-transform: uppercase;
+}
+
+#mainlogo {
+    text-transform: uppercase;
+}
+
+/*--navbar stuffffff--*/
+
+nav {
+    text-align: center;
+    margin-top: 30px;
+    
+}
+
+nav a {
+    padding: 20px 20px 20px 20px;
+    margin: 0;
+    color: #fff;
+    text-decoration: none;
+    background: none;
+    border: 5px solid rgba(0, 0, 0, 0);
+    transition: border .25s linear;
+}
+
+nav a:hover{
+    border: 5px solid #fff; 
+    background-image: url(assets/background_blurry.jpg);
+    background-position: center bottom;
+    background-attachment: fixed;
+    background-size: cover;
+    content: "";
+} 
+
+
+/*--page layout--*/
+main {
+    text-align: center;
+}
+
+h1 {
+    text-align: center;
+}
+
+h2 {
+    font-size: 1.2em;
+    text-decoration: underline;
+}
+
+#content {
+    text-align: left;
+}
+
+.centerimg {
+    display: block;
+    margin: auto;
+}
+
+#mainlogo {
+    position: absolute;
+    font-size: 5em;
+    text-align: right; 
+    top: 30%;
+    left: 25%;
+}
+
+#mainlogo img {
+    position: absolute;
+    top: 3%;
+    left: 105%;
+}
+
+footer {
+    text-align: right;
+    position: absolute;
+    bottom: 0%;
+    right: 0%;
+}
+
+.paraimage {
+    float: right;
+    border-left: solid 5px white;
+    margin-left: 2px;
+}
+
+.paraimage2 {
+    box-shadow: 5px 5px 2.5px rgba(0, 0, 0, 0.4);
+}
+
+main h1 {
+    border-bottom: 5px solid white;
+}
+
+#topofpage {
+    position: fixed;
+    bottom: 10px;
+    left: 18%;
+    font-size: 7em;
+    color: white;
+    text-decoration: none;
+}
+/*--frost effect--*/
+
+.glass::before{
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    z-index: -1;
+    width: 100%;
+    height: 100%;
+    background-image: url(assets/background_blurry.jpg); 
+    background-position: center bottom;
+    background-attachment: fixed;
+    background-size: cover;
+    content: "";
+}
+
+.glass{
+    position: relative;
+    border-bottom: 1px solid; 
+    border-color: #ccc;
+    border-color: rgba(255, 255, 255, 0.49);
+    background-color: rgba(255, 255, 255, 0.2); 
+}
+
+main {
+    margin: 3% 25% 0 25%;
+    padding: 40px 50px;
+}
+
+#outmain {
+    margin: 0 25%;
+    padding: 40px 50px;
+    text-align: center;
+    color: white;
+    
+}
+
+#outmain a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    padding: 5px;
+    border: 5px solid #fff;
+}
